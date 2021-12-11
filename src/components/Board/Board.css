@@ -1,0 +1,17 @@
+.Paper {
+    width: 82px;
+    height: 82px;
+}
+
+.Grid {
+    margin: 0px !important;
+    width: 100% !important;
+}
+
+.Icon {
+    color: #27c7e4;
+}
+
+.Clicked {
+    pointer-events: none;
+}
