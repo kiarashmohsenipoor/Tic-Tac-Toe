@@ -68,8 +68,8 @@ class Ui extends Component {
                         <Button
                             onClick={this.resetGame}
                             variant="raised"
-                            color="default">
-                            <Refresh style={{ color: '#E91E63' }} />
+                            color="primary">
+                            <Refresh style={{ color: '#ffe216' }} />
                             RESET
                         </Button>
                     </Grid>

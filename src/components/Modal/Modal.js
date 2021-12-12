@@ -16,11 +16,11 @@ const modaldialog = (props) => {
 
     let icon;
     if (text.includes('You'))
-        icon = 'sentiment_very_satisfied';
+        icon = ':)';
     else if (text.includes('Opponent'))
-        icon = 'sentiment_very_dissatisfied';
+        icon = ':(';
     else
-        icon = 'thumbs_up_down';
+        icon = '=';
 
     return (
         <Dialog
@@ -43,6 +43,7 @@ const modaldialog = (props) => {
             <DialogActions>
                 <Button
                     onClick={onClose}
+                    style={{align: 'center'}}
                     color="secondary"
                     autoFocus>
                     PLAY AGAIN

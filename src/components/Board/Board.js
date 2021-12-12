@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import './Board.css';
 import ButtonBase from "@material-ui/core/ButtonBase";
-import Icon from '@material-ui/core/Icon';
+import Icon from "@material-ui/core/Icon"
 
 
 class Board extends Component {
@@ -32,11 +32,11 @@ class Board extends Component {
         const value = child.innerHTML;
         if (value === '') {
             if (this.state.myTurn) {
-                child.innerHTML = 'fiber_manual_record';
+                child.innerHTML = "<span style='color: #cd5cc6;'>O</span>";
                 this.setState({ myTurn: false });
                 this.board[x][y] = 'O'
             } else {
-                child.innerHTML = 'games';
+                child.innerHTML = "<span style='color: #ed7116;'>X</span>";
                 this.setState({ myTurn: true });
                 this.board[x][y] = 'X'
             }
@@ -91,7 +91,7 @@ class Board extends Component {
         }
 
         if (this.state.movecount === Math.pow(width, 2)) {
-            this.props.won('Its a tie!!');
+            this.props.won('Draw!');
             this.setScore('DRAWS');
             return
         }
