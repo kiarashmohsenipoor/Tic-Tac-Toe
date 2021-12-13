@@ -128,7 +128,7 @@ class Board extends Component {
                             className="Paper">
                             <Icon
                                 className="Icon"
-                                style={{ fontSize: 78 }}>
+                            >
                             </Icon>
                         </Paper>
                     </ButtonBase>
