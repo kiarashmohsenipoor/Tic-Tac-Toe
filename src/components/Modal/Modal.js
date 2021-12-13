@@ -55,7 +55,7 @@ const modaldialog = (props) => {
 };
 
 modaldialog.propTypes = {
-    open: PropTypes.func,
+    open: PropTypes.any,
     onClose: PropTypes.func,
     text: PropTypes.string
   };

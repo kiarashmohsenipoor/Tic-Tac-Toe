@@ -20,11 +20,23 @@
 @media only screen and (max-width: 800px){
 
     .Paper {
-    width: 55px;
-    height: 55px;
+        width: 55px;
+        height: 55px;
+    }
+    .Icon {
+        color: #27c7e4;
+        font-size: 50px !important;
+    }
 }
-.Icon {
-    color: #27c7e4;
-    font-size: 50px !important;
-}
+
+@media only screen and (max-width: 220px){
+
+    .Paper {
+        width: 35px;
+        height: 35px;
+    }
+    .Icon {
+        color: #27c7e4;
+        font-size: 35px !important;
+    }
 }
